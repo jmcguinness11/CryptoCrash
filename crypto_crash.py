@@ -16,7 +16,6 @@ while(1):
 	btc_price = Bitfinex().get_current_price()
 
 	MSG = 'The current price of Bitcoin is ${:.2f}'.format(btc_price)
-	MSG = str(MSG)
 
 	#send sms message
 	gmail_server.sendmail('{}@gmail.com'.format(var.ACCOUNT), 
